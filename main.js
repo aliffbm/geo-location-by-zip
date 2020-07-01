@@ -11,7 +11,7 @@ button.addEventListener('click', function (e) {
     var regex = /^\d{5}$/
     
     if(regex.test(zip)) { // fetch the geo info from geocoding api
-        fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=AIzaSyDoJ-GU84XiQlvN8zqj8GJ4qy03VT3asWM`)
+        fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${zip}&key=API_KEY`)
         .then(response => response.json()) 
         .then(data => {
             // grab all the pertinent data
